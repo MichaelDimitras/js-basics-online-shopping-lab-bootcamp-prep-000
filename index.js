@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
 
  var toAdd = {[item]: 3};
- cart = Object.assign(cart, toAdd)
+ cart = Object.assign(cart, toAdd);
 
  console.log(`${item} + " has been added to your cart."`)
  return cart;
