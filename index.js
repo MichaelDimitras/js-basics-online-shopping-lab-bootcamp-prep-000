@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
 
- var toAdd = {[item]: Math.floor(Math.random(1,100)};
+ var toAdd = {[item]: 3};
  setCart(Object.assign(cart, toAdd);
 
  console.log(`${item} + " has been added to your cart."`)
