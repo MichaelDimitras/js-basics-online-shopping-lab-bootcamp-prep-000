@@ -11,8 +11,10 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- setCart(Object.assign(cart, {item: Math.floor(Math.random(1,100))}))
+ setCart(Object.assign(cart, {[item]: Math.floor(Math.random(1,100))}));
 }
+
+
 
 function viewCart() {
   // write your code here
