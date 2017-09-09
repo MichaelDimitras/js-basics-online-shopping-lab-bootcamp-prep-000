@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function getItemName(idx){
-  return Object.keys(getCart()[0])[0]);
+  return Object.keys(getCart()[0])[0];
 }
 
 function addToCart(item) {
