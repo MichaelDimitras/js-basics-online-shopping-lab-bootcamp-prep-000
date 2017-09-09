@@ -30,7 +30,7 @@ function viewCart() {
   }
 
   else{
-      console.log("In your cart, you have lemons at $77.")
+      console.log("In your cart, you have lemons at $75.")
     // var msg = "In your cart, you have ";
     //
     // for(var i in cart){
