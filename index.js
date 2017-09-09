@@ -38,10 +38,10 @@ function viewCart() {
     var msg = "In your cart, you have ";
 
     for(var i = 0; i < cart.legnth - 1; i++){
-      msg += ` ${cart[i].keys[0]} at $${cart[i]}, `;
+      msg += ` ${cart[i].keys()[0]} at $${cart[i]}, `;
     }
 
-    console.log(`${msg} and ${cart[cart.length - 1].keys} at $${cart[cart.length - 1]}`);
+    console.log(`${msg} and ${cart[cart.length - 1].keys()[0]} at $${cart[cart.length - 1]}`);
   }
 
 
