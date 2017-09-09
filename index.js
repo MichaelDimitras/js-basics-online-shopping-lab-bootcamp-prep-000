@@ -15,11 +15,11 @@ function addToCart(item) {
 
  var toAdd = {[item]: [price]};
 
- setCart([toAdd, ...cart]);
+ var c = setCart([toAdd, ...cart]);
 
  console.log(`${item} has been added to your cart.`)
 
- return cart;
+ return cc;
 
 }
 
