@@ -42,7 +42,7 @@ function viewCart() {
   }
 
   else if getCart().length == 2){
-    console.log(`In your cart, you have ${getItemName(0)} at $${getCart()[0][getItemName(0)]} and ${getItemName(1)} at $${getCart()[1][getItemName(1)`)
+    console.log(`In your cart, you have ${getItemName(0)} at $${getCart()[0][getItemName(0)]} and ${getItemName(1)} at $${getCart()[1][getItemName(1)}`)
   }
 
   else {
