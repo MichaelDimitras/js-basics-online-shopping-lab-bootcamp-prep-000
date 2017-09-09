@@ -41,13 +41,17 @@ function viewCart() {
     console.log(`In your cart, you have ${getItemName(0)} at $${getCart()[0][getItemName(0)]}.`)
   }
 
+  else if getCart().length == 2){
+    
+  }
+
   else {
     var msg = "In your cart, you have ";
 
     for(var i = 0; i < getCart().length - 1; i++){
       msg += `${getItemName(i)} at $${getItemPrice(i)}, `;
     }
-    console.log(`${msg.slice(0,-2)}, and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`);
+    console.log(`${msg}, and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`);
   }
 }
 
