@@ -11,7 +11,6 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
-
  var toAdd = {[item]: 3};
  cart = Object.assign(cart, toAdd);
 
