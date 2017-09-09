@@ -12,7 +12,6 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var toAdd = {[item]: 3};
- setCart([...cart, item]);
 
  console.log(`${item} + " has been added to your cart."`)
  return cart;
