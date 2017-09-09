@@ -32,7 +32,7 @@ function viewCart() {
 
     var msg = "In your cart, you have ";
 
-    for(var i = 0; i < cart.legnth; i++){
+    for(var i = 0; i < cart.legnth - 1; i++){
       msg += ` ${cart[i].keys} at $${cart[i]}, `;
     }
 
