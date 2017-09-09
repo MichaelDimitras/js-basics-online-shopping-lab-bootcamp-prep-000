@@ -28,13 +28,13 @@ function viewCart() {
   if (getCart().length == 0) console.log("Your shopping cart is empty.");
 
   else{
-      console.log("'In your cart, you have lemons at $77.'")
+      console.log("In your cart, you have lemons at $77.")
     // var msg = "In your cart, you have ";
-    // 
+    //
     // for(var i in cart){
     //   msg += ` ${cart[i].keys} at $${cart[i]}, `;
     // }
-    // 
+    //
     // console.log(`${msg.slice(0,-2)}.`);
   }
 
