@@ -44,9 +44,9 @@ function viewCart() {
       msg += `${getItemName(i)} at $${getCart()[i][getItemName(i)]}, `;
     }
 
-    console.log(`${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`);
+    //console.log(`${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`);
   }
-  return msg;
+  return `${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`;
 }
 
 function total() {
