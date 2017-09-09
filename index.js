@@ -31,7 +31,7 @@ function viewCart() {
     var msg = "In your cart, you have ";
 
     for(var i in cart){
-      msg += ` ${cart[i].keys} at ${cart[i]}, `;
+      msg += ` ${cart[i].keys} at $${cart[i]}, `;
     }
 
     console.log(`${msg.slice(0,-2)}.`);
