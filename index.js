@@ -25,10 +25,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if {
-    getCart().length == 0) console.log("Your shopping cart is empty.");
+  if (getCart().length == 0) ){
+    console.log("Your shopping cart is empty.");
   }
-  
+
   else{
       console.log("In your cart, you have lemons at $77.")
     // var msg = "In your cart, you have ";
