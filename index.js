@@ -69,7 +69,7 @@ function total() {
 function removeFromCart(item) {
   var idx = getCart().findIndex(e=>{return e.hasOwnProperty(item)});
 
-  if (idx == -1) return "That item is not in your cart.";
+  if (idx == -1) console.log("That item is not in your cart.");
 
   else return cart.splice(idx, 1);
 }
