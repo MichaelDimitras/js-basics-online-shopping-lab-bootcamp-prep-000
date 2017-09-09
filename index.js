@@ -32,11 +32,11 @@ function viewCart() {
 
     var msg = "In your cart, you have ";
 
-    for(var i = 0; i < cart.legnth - 1; i++){
+    for(var i = 0; i < getCart().legnth - 1; i++){
       msg += ` ${cart[i].keys} at $${cart[i]}, `;
     }
 
-    console.log(`${msg.slice(0,-2)}.`);
+    console.log(`${msg} and `);
   }
 
 
