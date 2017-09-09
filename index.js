@@ -67,7 +67,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var idx = getCart.findIndex(e=>{return e.hasOwnProperty(item)});
+  var idx = getCart().findIndex(e=>{return e.hasOwnProperty(item)});
 
   if (idx == -1) return "That item is not in your cart.";
 
