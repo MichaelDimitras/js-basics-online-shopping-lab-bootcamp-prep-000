@@ -183,34 +183,34 @@ describe("removeFromCart()", function() {
     expect(console.log).toHaveBeenCalledWith("That item is not in your cart.");
   });
 });
-//
-// describe("placeOrder()", function() {
-//   it("doesn't place the order if a credit card number is not provided", function() {
-//     placeOrder();
-//
-//     expect(console.log).toHaveBeenCalledWith(
-//       "Sorry, we don't have a credit card on file for you."
-//     );
-//   });
-//
-//   it("places an order when a credit card number is provided", function() {
-//     addToCart("zucchini");
-//
-//     const cartTotal = total();
-//     const cardNumber = Math.floor(Math.random() * 100000000);
-//
-//     placeOrder(cardNumber);
-//
-//     expect(console.log).toHaveBeenCalledWith(
-//       `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
-//     );
-//   });
-//
-//   it("empties the cart", function() {
-//     addToCart("apples");
-//
-//     placeOrder(12345678);
-//
-//     expect(getCart()).toEqual([]);
-//   });In your cart, you have
-// });
+
+describe("placeOrder()", function() {
+  it("doesn't place the order if a credit card number is not provided", function() {
+    placeOrder();
+
+    expect(console.log).toHaveBeenCalledWith(
+      "Sorry, we don't have a credit card on file for you."
+    );
+  });
+
+  it("places an order when a credit card number is provided", function() {
+    addToCart("zucchini");
+
+    const cartTotal = total();
+    const cardNumber = Math.floor(Math.random() * 100000000);
+
+    placeOrder(cardNumber);
+
+    expect(console.log).toHaveBeenCalledWith(
+      `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
+    );
+  });
+
+  it("empties the cart", function() {
+    addToCart("apples");
+
+    placeOrder(12345678);
+
+    expect(getCart()).toEqual([]);
+  });In your cart, you have
+});
