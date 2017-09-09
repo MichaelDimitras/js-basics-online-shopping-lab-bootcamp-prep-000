@@ -157,32 +157,32 @@ describe("total()", function() {
   });
 });
 
-// describe("removeFromCart()", function() {
-//   it("removes the specified item from the cart", function() {
-//     addToCart("vanilla");
-//     addToCart("watermelon");
-//     addToCart("yams");
-//
-//     removeFromCart("watermelon");
-//
-//     const firstItem = Object.keys(getCart()[0])[0];
-//     const secondItem = Object.keys(getCart()[1])[0];
-//
-//     expect(firstItem).toEqual("vanilla");
-//     expect(secondItem).toEqual("yams");
-//
-//     removeFromCart("yams");
-//
-//     expect(getCart().length).toEqual(1);
-//   });
-//
-//   it("alerts you if you're trying to remove an item that isn't in your cart", function() {
-//     // Repeat item name from previous test to prevent hard-coding.
-//     removeFromCart("yams");
-//
-//     expect(console.log).toHaveBeenCalledWith("That item is not in your cart.");
-//   });
-// });
+describe("removeFromCart()", function() {
+  it("removes the specified item from the cart", function() {
+    addToCart("vanilla");
+    addToCart("watermelon");
+    addToCart("yams");
+
+    removeFromCart("watermelon");
+
+    const firstItem = Object.keys(getCart()[0])[0];
+    const secondItem = Object.keys(getCart()[1])[0];
+
+    expect(firstItem).toEqual("vanilla");
+    expect(secondItem).toEqual("yams");
+
+    removeFromCart("yams");
+
+    expect(getCart().length).toEqual(1);
+  });
+
+  it("alerts you if you're trying to remove an item that isn't in your cart", function() {
+    // Repeat item name from previous test to prevent hard-coding.
+    removeFromCart("yams");
+
+    expect(console.log).toHaveBeenCalledWith("That item is not in your cart.");
+  });
+});
 //
 // describe("placeOrder()", function() {
 //   it("doesn't place the order if a credit card number is not provided", function() {
