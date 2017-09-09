@@ -131,9 +131,9 @@ describe("viewCart()", function() {
 
     viewCart();
 
-    // expect(console.log).toHaveBeenCalledWith(
-    //   `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, quince at $${quinceCost}, and rhubarb at $${rhubarbCost}.`
-    // );
+    expect(console.log).toHaveBeenCalledWith(
+      `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, quince at $${quinceCost}, and rhubarb at $${rhubarbCost}.`
+    );
   });
 });
 
