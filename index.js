@@ -9,6 +9,10 @@ function setCart(c) {
   return cart;
 }
 
+function getItemName(idx){
+  return Object.keys(getCart()[0])[0]
+}
+
 function addToCart(item) {
  // write your code here
  var price = Math.floor(Math.random() * (100) + 1);
@@ -29,6 +33,10 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
 
+  else if (getCart().length == 1){
+    
+    console.log(`In your cart, you have ${getCart()[0].keys()[0]} at $${getCart()[0]}.`)
+  }
 }
 
 function total() {
