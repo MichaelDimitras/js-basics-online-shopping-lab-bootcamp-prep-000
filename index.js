@@ -52,6 +52,7 @@ function viewCart() {
   return `${msg}and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1).}`;
 }
 
+
 function total() {
   // write your code here
 }
