@@ -33,11 +33,13 @@ function viewCart() {
     var msg = "In your cart, you have ");
 
     for(var i in cart){
-      msg += ` ${cart[i].keys[0]} at ${cart[i]}`
+      msg += ` ${cart[i].keys[0]} at ${cart[i]}, `
     }
+
+    return
   }
 
-  
+
 }
 
 function total() {
