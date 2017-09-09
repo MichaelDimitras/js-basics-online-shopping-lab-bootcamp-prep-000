@@ -67,7 +67,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var idx = getCart.findIndex(e=>{return e.hasOwnProperty(item)});
+  
 }
 
 function placeOrder(cardNumber) {
