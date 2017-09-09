@@ -35,7 +35,7 @@ function viewCart() {
 
   else if (getCart().length == 1){
 
-    console.log(`In your cart, you have ${getItemName} at $${getCart()[0]}.`)
+    console.log(`In your cart, you have ${getItemName(0)} at $${getCart()[getItemName(0)]}``)
   }
 }
 
