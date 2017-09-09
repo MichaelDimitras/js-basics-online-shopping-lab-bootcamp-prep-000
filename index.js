@@ -13,6 +13,10 @@ function getItemName(idx){
   return Object.keys(getCart()[0])[0];
 }
 
+function getItemPrice(idx){
+  return getCart()[idx][getItemName(idx)];
+}
+
 function addToCart(item) {
  // write your code here
  var price = Math.floor(Math.random() * (100) + 1);
@@ -46,7 +50,6 @@ function viewCart() {
 
     //console.log(`${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`);
   }
-  
   return `${msg}and ${getItemName(getCart().length - 1)} at $${getCart()[getCart().length - 1][getItemName(getCart().length - 1)]}`;
 }
 
