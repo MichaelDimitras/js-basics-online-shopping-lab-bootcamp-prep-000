@@ -36,6 +36,8 @@ function viewCart() {
       msg += ` ${cart[i].keys[0]} at ${cart[i]}`
     }
   }
+
+  
 }
 
 function total() {
