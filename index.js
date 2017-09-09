@@ -50,7 +50,8 @@ function viewCart() {
   }
 
 //  console.log(`${msg.slice(0,-2)} and ${getItemName(getCart().length - 1)} at`)
-return `${msg} and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`;
+return msg;
+//return `${msg} and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`;
 }
 
 
