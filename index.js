@@ -28,12 +28,11 @@ function viewCart() {
   if (getCart().length == 0){
     console.log("Your shopping cart is empty.");
   }
-
   else{
 
     var msg = "In your cart, you have ";
 
-    for(var i in cart){
+    for(var i = 0; i < cart.legnth; i++){
       msg += ` ${cart[i].keys} at $${cart[i]}, `;
     }
 
