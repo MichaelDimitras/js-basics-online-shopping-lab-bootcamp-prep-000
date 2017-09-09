@@ -34,7 +34,7 @@ function viewCart() {
       msg += ` ${cart[i].keys} at ${cart[i]}, `;
     }
 
-    console.log(msg.slice(0,-2)});
+    console.log(`${msg.slice(0,-2)}.`);
   }
 
 
