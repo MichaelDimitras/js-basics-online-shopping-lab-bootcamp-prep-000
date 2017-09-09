@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  var toAdd = {[item]: Math.floor(Math.random(0,100))};
  setCart([...cart, toAdd]);
- console.log(`${item} + " has been added to your cart."`)
+ console.log(`${item} has been added to your cart.`)
  return cart;
 
 }
