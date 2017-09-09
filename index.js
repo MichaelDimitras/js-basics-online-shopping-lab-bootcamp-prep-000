@@ -30,14 +30,14 @@ function viewCart() {
   }
 
   else{
-      
-    // var msg = "In your cart, you have ";
-    //
-    // for(var i in cart){
-    //   msg += ` ${cart[i].keys} at $${cart[i]}, `;
-    // }
-    //
-    // console.log(`${msg.slice(0,-2)}.`);
+
+    var msg = "In your cart, you have ";
+
+    for(var i in cart){
+      msg += ` ${cart[i].keys} at $${cart[i]}, `;
+    }
+
+    console.log(`${msg.slice(0,-2)}.`);
   }
 
 
