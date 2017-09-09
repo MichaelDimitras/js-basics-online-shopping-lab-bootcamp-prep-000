@@ -47,11 +47,11 @@ function viewCart() {
     for(var i = 0; i < getCart().length - 1; i++){
       msg += `${getItemName(i)} at $${getItemPrice(i)}, `;
     }
+    return `${msg.slice(0,2)} and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`;
   }
 
 //  console.log(`${msg.slice(0,-2)} and ${getItemName(getCart().length - 1)} at`)
-return msg.slice(0,2);
-//return `${msg} and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}.`;
+
 }
 
 
