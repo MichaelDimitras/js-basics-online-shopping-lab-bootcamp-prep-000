@@ -18,6 +18,7 @@ function addToCart(item) {
  setCart([toAdd, ...cart]);
 
  console.log(`${item} has been added to your cart.`)
+
  return cart;
 
 }
