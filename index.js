@@ -71,7 +71,7 @@ function removeFromCart(item) {
 
   if (idx == -1) return "That item is not in your cart.";
 
-  else setCart
+  else return cart.splice(idx, 1);
 }
 
 function placeOrder(cardNumber) {
