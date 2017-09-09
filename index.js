@@ -29,7 +29,10 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
 
-  
+  else if (getCart.length == 1) {
+    
+  }
+
   else{
 
     var msg = "In your cart, you have ";
