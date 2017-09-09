@@ -29,22 +29,6 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
 
-  else if (getCart.length == 1) {
-    console.log(`In your cart, you have ${cart[0].keys()[0]} at $${cart[0]}.`)
-  }
-
-  else{
-
-    var msg = "In your cart, you have ";
-
-    for(var i = 0; i < cart.legnth - 1; i++){
-      msg += ` ${cart[i].keys()[0]} at $${cart[i]}, `;
-    }
-
-    console.log(`${msg} and ${cart[cart.length - 1].keys()[0]} at $${cart[cart.length - 1]}`);
-  }
-
-
 }
 
 function total() {
