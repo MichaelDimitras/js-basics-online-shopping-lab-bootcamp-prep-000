@@ -36,7 +36,7 @@ describe("addToCart()", function() {
     let itemPrice = getCart()[0][itemName];
 
     expect(itemName).toEqual("daikon");
-    //expect(Number.isInteger(itemPrice)).toBe(true);
+    expect(Number.isInteger(itemPrice)).toBe(true);
   });
 
   it("sets the price as an integer between 1 and 100", function() {
