@@ -36,7 +36,7 @@ function viewCart() {
       msg += ` ${cart[i].keys} at $${cart[i]}, `;
     }
 
-    console.log(`${msg} and ${cart[cart.length - 1].keys}`);
+    console.log(`${msg} and ${cart[cart.length - 1].keys at $${cart[cart.length - 1]}`);
   }
 
 
