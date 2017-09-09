@@ -30,7 +30,7 @@ function viewCart() {
   }
 
   else if (getCart.length == 1) {
-    console.log(`In your cart, you have ${cart[0].keys} at $${cart[0]}.`)
+    console.log(`In your cart, you have ${cart[0].keys()[0]} at $${cart[0]}.`)
   }
 
   else{
