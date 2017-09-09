@@ -45,7 +45,7 @@ function viewCart() {
     var msg = "In your cart, you have ";
 
     for(var i = 0; i < getCart().length - 1; i++){
-      msg += `${getItemName(i)} at $${getCart()[i][getItemName(i)]}, `;
+      msg += `${getItemName(i)} at $${getItemPrice(i)}, `;
     }
 
     //console.log(`${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`);
