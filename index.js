@@ -28,6 +28,8 @@ function viewCart() {
   if (getCart().length == 0){
     console.log("Your shopping cart is empty.");
   }
+
+  
   else{
 
     var msg = "In your cart, you have ";
