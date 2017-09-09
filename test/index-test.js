@@ -123,7 +123,7 @@ describe("viewCart()", function() {
     //   `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`
     // );
 
-    expect(viewCart().toEqual(`In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`))
+    expect(viewCart().toEqual(`In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`));
 
     addToCart("rhubarb");
 
