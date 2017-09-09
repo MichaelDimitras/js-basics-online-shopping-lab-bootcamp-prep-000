@@ -50,7 +50,7 @@ function viewCart() {
 
     //console.log(`${msg}and ${getItemName(getCart.length - 1)} at $${getCart()[0][getItemName(getCart.length - 1)]}.`);
   }
-  return cart;
+  return cart[cart.length - 1];
 //  return `${msg}and ${getItemName(getCart().length - 1)} at $${getItemPrice(getCart().length - 1)}`;
 }
 
